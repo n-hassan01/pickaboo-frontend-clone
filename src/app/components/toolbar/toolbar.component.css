@@ -1,0 +1,108 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+mat-toolbar {
+  margin-top: 20px;
+  height: 90px;
+}
+
+h1 {
+  display: inline;
+  font-size: 25px;
+  color: rgb(17, 160, 219);
+  margin-left: 170px;
+  cursor: pointer;
+}
+
+.searchbar {
+  display: inline;
+  border: 1px solid;
+  color: rgb(197, 195, 190);
+  margin-left: 125px;
+}
+
+.searchbar input {
+  position: relative;
+  height: 25px;
+  width: 550px;
+  border: none;
+  background: transparent;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+.searchbar fa-icon {
+  position: relative;
+  display: inline;
+  color: rgb(197, 195, 190);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.cart fa-icon {
+  position: relative;
+  display: inline;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.cart button {
+  position: relative;
+  color: black;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.cart {
+  display: inline;
+  margin-left: 25px;
+}
+
+.login fa-icon,
+.login span {
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.login {
+  margin-left: 75px;
+  margin-top: 3px;
+}
+
+.login:hover {
+  color: rgb(17, 160, 219);
+}
+
+.register fa-icon,
+.register span {
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.register {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.register:hover {
+  color: rgb(17, 160, 219);
+}
+
+/* responsive media query ... */
+
+@media only screen and (max-width: 600px) {
+  mat-toolbar {
+    display: none;
+  }
+}

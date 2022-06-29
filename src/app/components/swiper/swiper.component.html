@@ -1,0 +1,31 @@
+<swiper
+  [slidesPerView]="1"
+  [spaceBetween]="50"
+  (swiper)="onSwiper($event)"
+  (slideChange)="onSlideChange()"
+  [navigation]="true"
+  [pagination]="{ clickable: true }"
+  [scrollbar]="{ draggable: true }"
+>
+  <ng-template swiperSlide
+    ><img
+      src="https://azse77seaprodsa.blob.core.windows.net/b2b-dr-pickaboocdn/media/emthemes/resized/frontend/emthemes/slideshow/a/m/amazfit_smartwatch_built_to_empower_big_banner.jpg"
+      alt=""
+      srcset=""
+  /></ng-template>
+
+  <ng-template swiperSlide
+    ><img
+      src="https://azse77seaprodsa.blob.core.windows.net/b2b-dr-pickaboocdn/media/emthemes/resized/frontend/emthemes/slideshow/i/n/infinix-web.jpg"
+      alt=""
+      srcset=""
+  /></ng-template>
+
+  <ng-template swiperSlide
+    ><img
+      src="https://azse77seaprodsa.blob.core.windows.net/b2b-dr-pickaboocdn/media/emthemes/resized/frontend/emthemes/slideshow/a/i/air_conditioner_bi_banner_1.jpg"
+      alt=""
+      srcset=""
+  /></ng-template>
+
+</swiper>

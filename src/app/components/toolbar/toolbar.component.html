@@ -1,0 +1,26 @@
+<mat-toolbar>
+
+    <h1 routerLink="/Home">pickaboo</h1>
+    
+    <div class="searchbar">
+      <input type="text" placeholder="search entire store here...">
+      <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+    </div>
+   
+    <div class="cart">
+      <fa-icon [icon]="faShoppingCart"></fa-icon>
+      <button mat-raised-button disabled>My Cart</button>
+    </div>
+   
+    <div class="login">
+     <fa-icon [icon]="faUnlock"></fa-icon>
+     <span>Log In</span>
+    </div>
+   
+    <div class="register">
+     <fa-icon [icon]="faKey"></fa-icon>
+     <span>Register</span>
+    </div>
+    
+    
+</mat-toolbar>

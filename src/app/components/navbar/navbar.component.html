@@ -1,0 +1,92 @@
+<div class="navbar">
+  <div class="logo" (click)="onClick()">
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!-- <h2>pickaboo</h2> -->
+  </div>
+
+  <ul class="nav-menu" [class.activeClass]="responsive">
+    <li>
+      SMARTPHONES
+      <ul class="sub-menu">
+        <li *ngFor="let s of smartphones">{{ s }}</li>
+      </ul>
+    </li>
+
+    <li>
+      ELECTRONICS & APPLIANCES
+      <div class="sub-menu">
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h2>Home Appliances</h2>
+            <ul>
+              <li *ngFor="let h of HomeAppliances">{{ h }}</li>
+            </ul>
+          </div>
+
+          <div class="mega-col">
+            <h2>KitchenAppliances</h2>
+            <ul>
+              <li *ngFor="let h of HomeAppliances">{{ h }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      MOBILE ACCESSORIES
+      <div class="sub-menu">
+        <div class="double-col">
+          <div>
+            <ul>
+              <li *ngFor="let m1 of MobileAccessories1">{{ m1 }}</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li *ngFor="let m2 of MobileAccessories2">{{ m2 }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>COMPUTER & ACCESSORIES</li>
+
+    <li>LIFESTYLE</li>
+  </ul>
+
+  <h1 routerLink="/Home">pickaboo</h1>
+
+  <div class="icons">
+    <div class="searchbar">
+      <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+    </div>
+   
+    <div class="cart">
+      <fa-icon [icon]="faShoppingCart"></fa-icon>
+    </div>
+  </div>
+
+</div>
+
+<!-- navbar while scroling  -->
+<!-- <div class="scrollnav">
+
+  <h2>pickaboo</h2>
+
+  <div class="Scrolright">
+    <div class="searchbar">
+      <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+    </div>
+   
+    <div class="cart">
+      <fa-icon [icon]="faShoppingCart"></fa-icon>
+    </div>
+  </div>
+
+</div> -->
